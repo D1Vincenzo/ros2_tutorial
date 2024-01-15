@@ -37,7 +37,7 @@ def main(args=None):                                                       # ROS
     node = Node("node_object_webcam")                                      # 创建ROS2节点对象并进行初始化
     node.get_logger().info("ROS2节点示例：检测图像中的苹果")
 
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(1)
 
     
     while rclpy.ok():
